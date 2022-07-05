@@ -29,13 +29,13 @@ bot.loadPlugin(cmd)
 
 bot.on('login',function(){
 	console.log("Logged In")
-	bot.chat("/register bot1234");
+	bot.chat("/register bot1234 bot1234");
 });
 
 bot.on('time', function(time) {
 	if(nightskip == "true"){
 	if(bot.time.timeOfDay >= 13000){
-	bot.chat('/register bot1234')
+	bot.chat('/register bot1234 bot1234')
 	}}
     if (connected <1) {
         return;
